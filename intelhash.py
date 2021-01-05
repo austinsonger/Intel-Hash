@@ -1,4 +1,3 @@
-# !/usr/bin/env python3
 """
     Title:      IntelHash
     Desc:       Takes a Onion URL and Hashes it and compares it against blacklisted hashed onion URLS
@@ -10,6 +9,7 @@
 
 
 import base64
+from unfurl import core
 import hashlib
 import html.parser
 import re
@@ -17,6 +17,21 @@ import json
 import time
 import os
 import socket
+import strictyaml
+import urllib.parse
+import requests
+from ipwhois import IPWhois
+import tkinter
+import tkinter.filedialog
+
+
+from Modules import FileOpen
+from datetime import datetime, date
+
+linksFoundList = []
+linksRatingList = []
+linksSanitized = []
+linksDict = {}
 
 
 def switchMenu(choice):
