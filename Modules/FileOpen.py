@@ -13,7 +13,6 @@ INTELHASH
     if var == 2:
         print('''
 
-INTELHASH
 
 ''')
     print("\n INTELHASH ")

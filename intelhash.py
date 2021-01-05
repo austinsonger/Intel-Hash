@@ -7,7 +7,6 @@
 """
 
 
-
 import base64
 from unfurl import core
 import hashlib
@@ -50,6 +49,11 @@ def hashSwitch(choice):
         mainMenu()
 
 
+def titleLogo():
+    FileOpen.fileOpen()
+    os.system('cls||clear')
+
+
 def mainMenu():
     print("\n --------------------------------- ")
     print("\n              IntelHash            ")
@@ -77,4 +81,9 @@ def hashOnion():
 
 
 
+
+
+if __name__ == '__main__':
+    titleLogo()
+    mainMenu()
 
