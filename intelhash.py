@@ -4,7 +4,7 @@
     Desc:       Takes a Onion URL and Hashes it and compares it against blacklisted hashed onion URLS
     Author:     Austin Songer
     Version:    0.0.1
-    GitHub URL: https://github.com/austinsonger/intelhash
+    GitHub URL: https://github.com/austinsonger/intel-hash
 """
 
 
