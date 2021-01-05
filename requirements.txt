@@ -1,0 +1,8 @@
+asn1crypto==0.24.0
+certifi==2019.6.16
+chardet==3.0.4
+cryptography==2.7
+pywin32==224; sys_platform == 'win32'
+win-inet-pton==1.1.0
+wincertstore==0.2
+wget==3.2
