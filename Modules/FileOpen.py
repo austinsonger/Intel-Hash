@@ -6,13 +6,13 @@ def fileOpen():
     if var == 1:
         print('''                                           
 
-INTELHASH
+<PlaceHolder Logo>
 
 
 ''')
     if var == 2:
         print('''
-
+<PlaceHolder Logo>
 
 ''')
     print("\n INTELHASH ")
