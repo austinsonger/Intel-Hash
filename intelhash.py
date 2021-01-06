@@ -5,8 +5,6 @@
     Version:    0.0.1
     GitHub URL: https://github.com/austinsonger/intel-hash
 """
-
-
 import base64
 from unfurl import core
 import hashlib
@@ -19,10 +17,8 @@ import socket
 import strictyaml
 import urllib.parse
 import requests
-from ipwhois import IPWhois
 import tkinter
 import tkinter.filedialog
-
 
 from Modules import FileOpen
 from datetime import datetime, date
@@ -32,7 +28,6 @@ linksRatingList = []
 linksSanitized = []
 linksDict = {}
 
-
 def switchMenu(choice):
     if choice == '1':
         hashMenu()
@@ -41,18 +36,15 @@ def switchMenu(choice):
     else:
         mainMenu()
 
-
 def hashSwitch(choice):
     if choice == '1':
         hashOnion()
     if choice == '0':
         mainMenu()
 
-
 def titleLogo():
     FileOpen.fileOpen()
     os.system('cls||clear')
-
 
 def mainMenu():
     print("\n --------------------------------- ")
@@ -62,7 +54,6 @@ def mainMenu():
     print("\n OPTION 1: Hashing ")
     print(" OPTION 0: Exit Tool")
     switchMenu(input())
-
 
 def hashMenu():
     print("\n -------------------------------")
@@ -78,10 +69,6 @@ def hashOnion():
     userinput = input(" Enter the URL to be hashed: ")
     print(" MD5 Hash: " + hashlib.md5(userinput.encode("utf-8")).hexdigest())
     hashMenu()
-
-
-
-
 
 if __name__ == '__main__':
     titleLogo()
